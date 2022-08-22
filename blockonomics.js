@@ -59,7 +59,7 @@ module.exports = {
 	getNewAddress: function(APIKEY, reset, match_account) {
 		var url = config.config.newAddress;
 		if (reset == 1)
-			url = url + "reset=1";
+			url = url + "?reset=1";
 
 		if (match_account)
 			url = ( url + ( ( reset == 1 ) ? "&": "?" ) ) + "match_account=" + match_account;
